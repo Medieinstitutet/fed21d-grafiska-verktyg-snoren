@@ -1,3 +1,9 @@
+länk till figma design:
+https://www.figma.com/file/DnHdlXtUOcd9o3QheggqOr/CodeStanza?node-id=1%3A30
+
+- alla knappar har hover och disable state
+
+
 Info kring animationer :
 se länk för mer info om alla animationer och easing val: https://greensock.com/docs/v2/Easing
 se länkt för info om stagger: https://greensock.com/docs/v3/Staggers
@@ -11,3 +17,4 @@ Därefter ska all brödtext med 1 sekunds delay studsa in från överkant (Gsap 
 Sist ska  logotyp och input samt input knapp med 1,5 sekunders delay studsa ner från överkant också (Gsap “Bounce - easeOut” easing).
 
 Footer innehåll, cookie och meny behöver ej animeras
+
