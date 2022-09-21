@@ -47,3 +47,51 @@ button[disabled]{
     flex-direction: column;
     align-items: center;
 }
+h1, h2 {
+    color: #EC631B;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 94px;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+article{
+    color: #EEF4F5;
+    letter-spacing: 0.05em;
+    line-height: 30px;
+
+}
+.cards {
+    background-color: #EEF4F5;
+    text-align: center;
+    width: 300px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section {
+    margin-top: 17.5px;
+}
+a {
+    color: #EC631B;
+    text-decoration: none;
+    margin-top: 17.5px;
+}
+a:hover{
+    color: #CD5618;
+    text-decoration: underline;
+}
+a:active{
+    color: #EEF4F5;
+    text-decoration: none;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
