@@ -1,6 +1,18 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
 body {
     background-color: #1B252F;
     font-family: 'Roboto', sans-serif;
+    margin: 0 35px ;
+}
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 70px;
+
 }
 input, button {
     font-family: 'Roboto', sans-serif;
@@ -12,13 +24,19 @@ input {
     font-size: 16px;
     text-align: center;
     font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-letter-spacing: 0.05em;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
 }
 ::placeholder {
     color: #EC631B;
+}
+.email-container > button{
+    margin-top: 17.5px;
+}
+.mindblowing-desktop > svg{
+    display:none;
 }
 button{
     background-color: #EC631B;
@@ -26,7 +44,6 @@ button{
     color: #1B252F;
     width: 80px;
     height: 30px;
-    margin-top: 17.5px;
     font-style: normal;
     font-weight: 300;
     font-size: 10px;
@@ -42,7 +59,7 @@ button[disabled]{
     background-color: #8C3C12;
     cursor: not-allowed;
 }
-.flex-container {
+.email-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,16 +68,28 @@ h1, h2 {
     color: #EC631B;
     font-style: normal;
     font-weight: 700;
-    font-size: 80px;
-    line-height: 94px;
+    font-size: 3.25rem;
+    line-height: 1;
     letter-spacing: 0.05em;
     text-align: center;
+    margin: 0;
+}
+h2 {
+    font-size: 40px;
+    line-height: 47px;
 }
 article{
     color: #EEF4F5;
     letter-spacing: 0.05em;
-    line-height: 30px;
-
+    font-size: 10px;
+    color: #EEF4F5;
+    letter-spacing: 0.05em;
+    line-height: 25px;
+    font-weight: 100;
+    
+}
+section {
+    margin-top: 35px;
 }
 .cards {
     background-color: #EEF4F5;
@@ -68,15 +97,24 @@ article{
     width: 300px;
     line-height: 20px;
     letter-spacing: 0.05em;
+    width: 275px;
+    padding: 17.5px 17.5px 35px 17.5px;
+}
+.cards > ul {
+    padding: 0;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+}
+h4{
+    margin:0 0 5px 0;
 }
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-section {
-    margin-top: 17.5px;
-}
+
 a {
     color: #EC631B;
     text-decoration: none;
@@ -91,7 +129,121 @@ a:active{
     text-decoration: none;
 }
 footer{
+    margin-top:35px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-left: 35px;
+}
+.desktop-footer-logo{
+    display: none;
+}
+q,li{
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+}
+.desktop-svg {
+    display: none;
+}
+
+@media screen and (min-width: 641px){
+    body{
+        background-color: rgb(8, 5, 47);
+        margin: 0 70px;
+    }
+    h1{
+        font-size: 80px;
+    }
+    section {
+        margin-top: 70px;
+    }
+    article {
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    line-height: 30px;
+    font-weight: 300;
+    }
+    .subscribe-text {
+        margin-top: 17.5px;
+    }
+    .email-container > input {
+        margin-right: 35px;
+    }
+    .email-container > button{
+        margin-top: 0;
+    }
+    .email-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .cards{
+        width: 430px;
+        padding: 17.5px 17.5px 35px 17.5px;
+    }
+    footer {
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+        margin:70px 0;
+    }
+    footer a{
+        font-size: 20px;
+        margin: 0 17.5px;
+        font-weight: 500;
+    }
+  .desktop-footer-logo{
+    display: block;
+    visibility: hidden;
+  }
+}
+@media screen and (min-width:1025px){
+    body {
+        background-color: rebeccapurple;
+    }
+    .desktop-svg {
+        display: block;
+    }
+    h1, h2{
+        text-align: left;
+    }
+    main{
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 140px;
+    }
+    section{
+        flex: 1 40%;
+    }
+    .email-container{
+        justify-content: flex-start;
+    }
+    .mindblowing-desktop{
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        align-self: flex-start;
+    }
+    .mindblowing-desktop  svg{
+        margin:0 0 70px 0;
+        display: block;
+    } 
+    .desktop-footer-logo{
+        display: block;
+        visibility:visible;
+        margin:0;
+    }
+    .mobile-footer-logo{
+        margin:0;
+        visibility: hidden;
+    }
+    footer{
+        justify-content: space-between;
+        margin-bottom:70px;
+    }
+    footer a{
+        font-size: 2rem;
+        margin: 0 35px;
+        font-weight: 700;
+    }
 }
