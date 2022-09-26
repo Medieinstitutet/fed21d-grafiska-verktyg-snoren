@@ -38,7 +38,7 @@ input {
 .mindblowing-desktop > svg{
     display:none;
 }
-button{
+.mainBtn{
     background-color: #EC631B;
     border: none;
     color: #1B252F;
@@ -52,12 +52,35 @@ button{
     transition-duration: 0.4s;
     cursor: pointer;
 }
-button:hover{
+.decline{
+    background-color: #1B252F;
+    border: solid 1px #EC631B;
+    color: #EC631B;
+    width: 80px;
+    height: 30px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+}
+.mainBtn:hover{
     background-color: #CD5618;
 }
-button[disabled]{
+.decline:hover{
+    border: solid 1px #EEF4F5;
+    color: #EEF4F5;
+}
+.mainBtn[disabled]{
     background-color: #8C3C12;
     cursor: not-allowed;
+}
+.decline[disabled]{
+    border:1px solid #8C3C12;
+    color: #8C3C12;
 }
 .email-container {
     display: flex;
@@ -146,7 +169,22 @@ q,li{
 .desktop-svg {
     display: none;
 }
+.cookies{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color:#EEF4F5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
 
+}
+.cookies p {
+    text-align: center;
+    flex-grow: 1;
+}
 @media screen and (min-width: 641px){
     body{
         background-color: rgb(8, 5, 47);
@@ -207,6 +245,9 @@ q,li{
     h1, h2{
         text-align: left;
     }
+    h2{
+        font-size: 48px;
+    }
     main{
         flex-direction: row;
         flex-wrap: wrap;
@@ -245,5 +286,65 @@ q,li{
         font-size: 2rem;
         margin: 0 35px;
         font-weight: 700;
+    }
+    .menuLinks{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    
+    .spans{
+        height: 40px;
+        width: 45px;
+        position: relative;
+    }
+    span{
+        width: 50px;
+        height: 5px;
+        border-radius: 10px;
+        background-color: #EEF4F5;
+        margin-bottom: 5px;
+        position: absolute;
+        display: block;
+        cursor: pointer;
+        
+    }
+    .span1{
+        top: 0px;
+    }
+    .span2{
+        top: 10px;
+    }
+    .span3{
+        top: 20px;
+    }
+    .cookies{
+        padding-right: 70px;
+    }
+    .menu{
+        background-color: #EEF4F5;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 50%;
+       display: none;
+        
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu a {
+        font-size: 65px;
+        margin: 0 35px;
+        font-weight: 700;
+        margin-top: 80px;
+    }
+    .menuBtn{
+        position: absolute;
+        top: 70px;
+        right: 70px;
     }
 }
