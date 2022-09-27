@@ -19,7 +19,7 @@
 
   <body>
     <header>
-      <h1>CodeStanza</h1>
+      <h1 id="rubrik">CodeStanza</h1>
       <div class="menuBtn" onclick="openMenu()">
         <div class="spans">
           <span class="span1"></span>
@@ -34,7 +34,7 @@
       <a onclick="openMenu()">close</a>
     </nav>
     <main>
-      <section>
+      <section id="text">
         <article>
           Welcome to the latest & greatest frontend framework, CodeStanzaⒸ!
           <br />
@@ -55,6 +55,7 @@
       </section>
       <section class="mindblowing-desktop">
         <svg
+          id="inputAndLogo"
           width="200"
           height="200"
           viewBox="0 0 100 100"
@@ -102,7 +103,7 @@
             </linearGradient>
           </defs>
         </svg>
-        <div class="cards">
+        <div id="card1" class="cards">
           <h4>"Mindblowing!"</h4>
           <q
             >I will never go back to anything else, its like the bizarro world
@@ -115,20 +116,20 @@
       </section>
 
       <section>
-        <h2>Come get it</h2>
-        <article class="subscribe-text">
+        <h2 id="text">Come get it</h2>
+        <article id="text" class="subscribe-text">
           We are overwhelmed by the response to CodeStanzaⒸ so we have decided
           to make it a invite only affair for the time being. So if you are
           ready for your summer of George then make sure to sign up below and we
           will send you an invite as soon as possible.
         </article>
-        <section class="email-container">
+        <section id="inputAndLogo" class="email-container">
           <input type="email" placeholder="your@email" />
           <button class="mainBtn">Sign Up</button>
         </section>
       </section>
 
-      <section class="cards">
+      <section id="card2" class="cards">
         <h4>"Like a drug"</h4>
         <q
           >I know this feeling. It was 1979. I was traveling the Yangtze in
@@ -143,6 +144,7 @@
       </section>
       <section class="desktop-svg">
         <svg
+          id="inputAndLogo"
           width="200"
           height="200"
           viewBox="0 0 100 100"
@@ -320,6 +322,39 @@
         let cookiesBtn = document.getElementById("closeCookies");
         cookiesBtn.style.display = "none";
       }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script>
+      gsap.fromTo(
+        "#rubrik",
+        { y: -200 },
+        { y: 0, duration: 1.5, ease: "bounce.out" }
+      );
+      gsap.fromTo(
+        "#card1",
+        { y: -1000 },
+        { y: 0, duration: 1, ease: "bounce.out", stagger: 0.3, delay: 0.5 },
+        ">"
+      );
+      gsap.fromTo(
+        "#card2",
+        { y: -1000 },
+        { y: 0, duration: 1.5, ease: "bounce.out", stagger: 0.3, delay: 0.5 },
+        ">"
+      );
+      gsap.fromTo(
+        "#text",
+        { y: -1000 },
+        { y: 0, duration: 1.5, ease: "bounce.out", delay: 1 },
+        ">"
+      );
+
+      gsap.fromTo(
+        "#inputAndLogo",
+        { y: -2000 },
+        { y: 0, duration: 1.5, ease: "bounce.out", delay: 1.5 },
+        ">"
+      );
     </script>
   </body>
 </html>
