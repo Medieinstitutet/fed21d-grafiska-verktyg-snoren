@@ -185,6 +185,9 @@ q,li{
     text-align: center;
     flex-grow: 1;
 }
+.menu{
+    display: none;
+}
 @media screen and (min-width: 641px){
     body{
         background-color: rgb(8, 5, 47);
@@ -335,6 +338,7 @@ q,li{
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        z-index: 1;
     }
     .menu a {
         font-size: 65px;
