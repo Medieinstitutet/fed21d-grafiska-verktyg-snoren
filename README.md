@@ -2,5 +2,7 @@
 # FED21D Grafiska Verktyg 🎨
 Mall-repo för kursen `Grafiska Verktyg`
 
+Github pages => https://medieinstitutet.github.io/fed21d-grafiska-verktyg-snoren/code/
+
 # About the design
 designval gjort efter lite experimenterande med färgval och fonter, temat på hela sidan är lite komisk därav också lite lättsamma animationer som är tänkta att reflektera temat. Färvalen är tänkt att kännas seriöst i kontrast till själva temat som är väldigt oseriöst och komiskt.
