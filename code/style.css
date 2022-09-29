@@ -24,7 +24,7 @@ input {
     font-size: 16px;
     text-align: center;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.05em;
@@ -90,7 +90,7 @@ input {
 h1, h2 {
     color: #EC631B;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 3.25rem;
     line-height: 1;
     letter-spacing: 0.05em;
@@ -98,7 +98,7 @@ h1, h2 {
     margin: 0;
 }
 h2 {
-    font-size: 40px;
+    font-size: 28px;
     line-height: 47px;
 }
 article{
@@ -110,6 +110,9 @@ article{
     line-height: 25px;
     font-weight: 100;
     
+}
+.subscribe-text{
+    margin-top: 35px;
 }
 section {
     margin-top: 35px;
@@ -152,10 +155,20 @@ a:active{
     text-decoration: none;
 }
 footer{
-    margin-top:35px;
+    margin-top:70px;
     display: flex;
     flex-direction: column;
-    margin-left: 35px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+footer > nav {
+    display: flex;
+    flex-direction: column;
+
+}
+footer a{
+    font-weight: 700;
+    font-size: 17px;
 }
 .desktop-footer-logo{
     display: none;
@@ -190,7 +203,7 @@ q,li{
 }
 @media screen and (min-width: 641px){
     body{
-        background-color: rgb(8, 5, 47);
+        background-color: #1B252F;
         margin: 0 70px;
     }
     h1{
@@ -206,7 +219,7 @@ q,li{
     font-weight: 300;
     }
     .subscribe-text {
-        margin-top: 17.5px;
+        margin-top: 35px;
     }
     .email-container > input {
         margin-right: 35px;
@@ -220,16 +233,33 @@ q,li{
     }
     .cards{
         width: 430px;
-        padding: 17.5px 17.5px 35px 17.5px;
+        padding: 35px;
     }
+    q, li {
+        font-weight: 100;
+        font-size: 16px;
+        margin-top: 12px;
+        margin-bottom: 35px;
+       }
+       h4{
+        font-weight: 500;
+        font-size: 19px;
+        line-height: 18.75px;
+        letter-spacing: 0.05em;
+        margin-bottom: 17.5px;
+       }   
     footer {
         flex-direction: row;
         align-items: baseline;
         justify-content: space-between;
         margin:70px 0;
     }
+    footer > nav {
+        display: flex;
+        flex-direction: row;
+    }
     footer a{
-        font-size: 20px;
+        font-size: 22px;
         margin: 0 17.5px;
         font-weight: 500;
     }
@@ -237,28 +267,58 @@ q,li{
     display: block;
     visibility: hidden;
   }
+  h2{
+    font-size: 48px;
+  }
 }
 @media screen and (min-width:1025px){
     body {
-        background-color: rebeccapurple;
+        background-color: #1B252F;
     }
     .desktop-svg {
         display: block;
+        margin-top: 185px;
     }
     h1, h2{
         text-align: left;
     }
     h2{
-        font-size: 48px;
+        font-size: 74px;
+    }
+    h1{
+        font-size: 76px;
+    }
+    .subscribe-text{
+        margin-top: 70px;
+    }
+    .welcome-article{
+        margin-bottom: 200px;
     }
     main{
         flex-direction: row;
         flex-wrap: wrap;
-        column-gap: 140px;
+        column-gap: 33%;
+        justify-content: space-between;
+
     }
     section{
-        flex: 1 40%;
+        flex: 0 1 33%;
     }
+   q, li {
+    font-weight: 100;
+    font-size: 20px;
+    margin-top: 12px;
+    margin-bottom: 35px;
+   }
+   
+   
+   h4{
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 18.75px;
+    letter-spacing: 0.05em;
+    margin-bottom: 17.5px;
+   }
     .email-container{
         justify-content: flex-start;
     }
@@ -347,8 +407,16 @@ q,li{
         margin-top: 80px;
     }
     .menuBtn{
-        position: absolute;
+        position: fixed;
         top: 70px;
         right: 70px;
     }
+    article {
+        font-size: 19px;
+        }
+    #card2{
+        display:flex;
+        justify-content: flex-end;
+        
+    }    
 }

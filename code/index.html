@@ -35,7 +35,7 @@
     </nav>
     <main>
       <section id="text">
-        <article>
+        <article class="welcome-article">
           Welcome to the latest & greatest frontend framework, CodeStanzaⒸ!
           <br />
           This is the framework to end all frameworks, brainchild och Art
@@ -129,18 +129,20 @@
         </section>
       </section>
 
-      <section id="card2" class="cards">
-        <h4>"Like a drug"</h4>
-        <q
-          >I know this feeling. It was 1979. I was traveling the Yangtze in
-          search of a Mongolian horsehair vest. I had got to the market after
-          sundown. All of the clothing traders had gone, but a different sort of
-          trader still lurked about. <q>Just a taste,</q> he said. That was all
-          it took.
-        </q>
-        <ul>
-          <li>J.Peterman</li>
-        </ul>
+      <section id="card2">
+        <div class="cards">
+          <h4>"Like a drug"</h4>
+          <q
+            >I know this feeling. It was 1979. I was traveling the Yangtze in
+            search of a Mongolian horsehair vest. I had got to the market after
+            sundown. All of the clothing traders had gone, but a different sort
+            of trader still lurked about. <q>Just a taste,</q> he said. That was
+            all it took.
+          </q>
+          <ul>
+            <li>J.Peterman</li>
+          </ul>
+        </div>
       </section>
       <section class="desktop-svg">
         <svg
@@ -327,7 +329,7 @@
     <script>
       gsap.fromTo(
         "#rubrik",
-        { y: -200 },
+        { y: -500 },
         { y: 0, duration: 1.5, ease: "bounce.out" }
       );
       gsap.fromTo(
@@ -338,13 +340,13 @@
       );
       gsap.fromTo(
         "#card2",
-        { y: -1000 },
+        { y: -2000 },
         { y: 0, duration: 1.5, ease: "bounce.out", stagger: 0.3, delay: 0.5 },
         ">"
       );
       gsap.fromTo(
         "#text",
-        { y: -1000 },
+        { y: -2000 },
         { y: 0, duration: 1.5, ease: "bounce.out", delay: 1 },
         ">"
       );
