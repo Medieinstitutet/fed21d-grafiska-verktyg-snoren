@@ -132,8 +132,14 @@ section {
     margin: 0;
     justify-content: center;
 }
-h4{
+h3{
     margin:0 0 5px 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18.75px;
+    letter-spacing: 0.05em;
+    margin-bottom: 17.5px;
+        
 }
 main {
     display: flex;
@@ -241,11 +247,8 @@ q,li{
         margin-top: 12px;
         margin-bottom: 35px;
        }
-       h4{
-        font-weight: 500;
+       h3{
         font-size: 19px;
-        line-height: 18.75px;
-        letter-spacing: 0.05em;
         margin-bottom: 17.5px;
        }   
     footer {
@@ -312,11 +315,8 @@ q,li{
    }
    
    
-   h4{
-    font-weight: 500;
+   h3{
     font-size: 25px;
-    line-height: 18.75px;
-    letter-spacing: 0.05em;
     margin-bottom: 17.5px;
    }
     .email-container{
@@ -417,6 +417,6 @@ q,li{
     #card2{
         display:flex;
         justify-content: flex-end;
-        
+
     }    
 }
