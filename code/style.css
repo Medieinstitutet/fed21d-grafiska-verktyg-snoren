@@ -104,7 +104,7 @@ h2 {
 article{
     color: #EEF4F5;
     letter-spacing: 0.05em;
-    font-size: 10px;
+    font-size: 11px;
     color: #EEF4F5;
     letter-spacing: 0.05em;
     line-height: 25px;
@@ -135,7 +135,7 @@ section {
 h3{
     margin:0 0 5px 0;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 18.75px;
     letter-spacing: 0.05em;
     margin-bottom: 17.5px;
@@ -213,13 +213,13 @@ q,li{
         margin: 0 70px;
     }
     h1{
-        font-size: 80px;
+        font-size: 84px;
     }
     section {
         margin-top: 70px;
     }
     article {
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 0.05em;
     line-height: 30px;
     font-weight: 300;
@@ -243,12 +243,13 @@ q,li{
     }
     q, li {
         font-weight: 100;
-        font-size: 16px;
+        font-size: 19px;
         margin-top: 12px;
         margin-bottom: 35px;
+        line-height: 28px;
        }
        h3{
-        font-size: 19px;
+        font-size: 27px;
         margin-bottom: 17.5px;
        }   
     footer {
